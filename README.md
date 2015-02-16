@@ -1,6 +1,9 @@
 Charta
 ======
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Quality Score](https://img.shields.io/scrutinizer/g/hugoboos/charta.svg?style=flat-square)](https://scrutinizer-ci.com/g/hugoboos/charta)
+
 **Charta** is a CLI tool to add geolocations to address.
 
 
