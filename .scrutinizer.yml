@@ -1,0 +1,24 @@
+filter:
+  excluded_paths:
+    - 'bin/*'
+tools:
+  php_sim: true
+  php_pdepend: true
+  php_analyzer: true
+  php_loc: true
+  php_cpd: true
+checks:
+  php:
+    uppercase_constants: true
+    unused_variables: true
+    unreachable_code: true
+    switch_fallthrough_commented: true
+    security_vulnerabilities: true
+    parameter_doc_comments: true
+    fix_use_statements:
+      remove_unused: true
+      preserve_multiple: false
+      preserve_blanklines: false
+      order_alphabetically: true
+    fix_line_ending: true
+    simplify_boolean_return: true
