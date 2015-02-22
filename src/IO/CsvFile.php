@@ -31,13 +31,10 @@ class CsvFile extends File implements \IteratorAggregate
     parent::__construct($fileName, FileType::CSV);
 
     $this->columnDelimiter = $columnDelimiter;
-
-    $this->lines = null;
-    $this->lineCount = null;
   }
 
   /**
-   * @return null
+   * {@inheritdoc}
    */
   public function read()
   {
@@ -46,8 +43,7 @@ class CsvFile extends File implements \IteratorAggregate
   }
 
   /**
-   * Retrieve an external iterator.
-   * @return \Traversable
+   * {@inheritdoc}
    */
   public function getIterator()
   {

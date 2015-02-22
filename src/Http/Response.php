@@ -19,7 +19,7 @@ class Response
 
   /**
    * @param int $statusCode
-   * @param string $body
+   * @param string|null $body
    */
   public function __construct($statusCode, $body = null)
   {
@@ -47,7 +47,7 @@ class Response
 
   /**
    * The response body as JSON.
-   * @return mixed
+   * @return \stdClass
    */
   public function getJson()
   {

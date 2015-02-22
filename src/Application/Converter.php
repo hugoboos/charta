@@ -48,9 +48,6 @@ class Converter
     $this->inputFile = $inputFile;
     $this->outputFile = $outputFile;
     $this->locationResolver = $locationResolver;
-
-    $this->clients = null;
-    $this->clientIndex = null;
   }
 
   /**
