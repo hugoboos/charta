@@ -73,7 +73,7 @@ class GeocodingService
    * @param \stdClass $response
    * @return \BoosBoos\Charta\Client\GeoCoordinates
    */
-  private function parseResponse($response)
+  private function parseResponse(\stdClass $response)
   {
     $geo = null;
 
