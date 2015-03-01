@@ -18,11 +18,6 @@ class CsvFile extends File implements \IteratorAggregate
   private $lines;
 
   /**
-   * @var int
-   */
-  private $lineCount;
-
-  /**
    * @param string $fileName
    * @param string $columnDelimiter
    */
@@ -39,7 +34,6 @@ class CsvFile extends File implements \IteratorAggregate
   public function read()
   {
     $this->lines = array_map([$this, "readLine"], file($this->fileName));
-    $this->lineCount = count($this->lines);
   }
 
   /**
