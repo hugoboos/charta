@@ -5,7 +5,7 @@ namespace BoosBoos\Charta\Http;
 /**
  * @package BoosBoos\Charta\Http\Client
  */
-class Client implements IClient
+class Client implements ClientInterface
 {
   /**
    * @param \BoosBoos\Charta\Http\Url $url

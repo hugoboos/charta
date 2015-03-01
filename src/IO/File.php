@@ -6,7 +6,7 @@ namespace BoosBoos\Charta\IO;
  * Interface IFileReader
  * @package BoosBoos\Charta\IO
  */
-class File implements IFile
+class File implements FileInterface
 {
   /**
    * The file type.

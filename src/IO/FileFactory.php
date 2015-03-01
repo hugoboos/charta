@@ -12,7 +12,7 @@ class FileFactory
   /**
    * Creates a file based on the file name.
    * @param string $path
-   * @return \BoosBoos\Charta\IO\IFile
+   * @return \BoosBoos\Charta\IO\FileInterface
    * @throws \BoosBoos\Charta\Common\NotSupportedException
    */
   public function createFile($path)

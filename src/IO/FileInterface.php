@@ -5,7 +5,7 @@ namespace BoosBoos\Charta\IO;
 /**
  * @package BoosBoos\Charta\IO
  */
-interface IFile
+interface FileInterface
 {
   /**
    * Reads the file into memory.

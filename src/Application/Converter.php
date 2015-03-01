@@ -12,12 +12,12 @@ use BoosBoos\Charta\IO;
 class Converter
 {
   /**
-   * @var \BoosBoos\Charta\IO\IFile
+   * @var \BoosBoos\Charta\IO\FileInterface
    */
   private $inputFile;
 
   /**
-   * @var \BoosBoos\Charta\IO\IFile
+   * @var \BoosBoos\Charta\IO\FileInterface
    */
   private $outputFile;
 
@@ -27,14 +27,14 @@ class Converter
   private $locationResolver;
 
   /**
-   * @param \BoosBoos\Charta\IO\IFile $inputFile
-   * @param \BoosBoos\Charta\IO\IFile $outputFile
+   * @param \BoosBoos\Charta\IO\FileInterface $inputFile
+   * @param \BoosBoos\Charta\IO\FileInterface $outputFile
    * @param \BoosBoos\Charta\Client\GeoLocationResolver $locationResolver
    * @throws \BoosBoos\Charta\Common\NotSupportedException
    */
   public function __construct(
-    IO\IFile $inputFile,
-    IO\IFile $outputFile,
+    IO\FileInterface $inputFile,
+    IO\FileInterface $outputFile,
     Client\GeoLocationResolver $locationResolver
   ) {
     if ($inputFile->getFileType() !== IO\FileType::CSV) {

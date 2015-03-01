@@ -21,7 +21,7 @@ class GeocodingService
   const STATUS_OK = "OK";
 
   /**
-   * @var \BoosBoos\Charta\Http\IClient
+   * @var \BoosBoos\Charta\Http\ClientInterface
    */
   private $httpClient;
 
@@ -36,10 +36,10 @@ class GeocodingService
   private $throttler;
 
   /**
-   * @param \BoosBoos\Charta\Http\IClient $httpClient
+   * @param \BoosBoos\Charta\Http\ClientInterface $httpClient
    * @param \BoosBoos\Charta\Http\Url $endPointUrl
    */
-  public function __construct(Http\IClient $httpClient, Http\Url $endPointUrl)
+  public function __construct(Http\ClientInterface $httpClient, Http\Url $endPointUrl)
   {
     $this->httpClient = $httpClient;
     $this->endPointUrl = $endPointUrl;
