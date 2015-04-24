@@ -1,6 +1,6 @@
 {
   "name": "boosboos/charta",
-  "description": "A CLI tool to add geolocations to addresses.",
+  "description": "A CLI tool to add geolocations to addresses",
   "homepage": "https://github.com/hugoboos/charta",
   "license": "MIT",
   "authors": [
